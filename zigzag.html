@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zig zag</title>
+     <style>
+         #container{
+             display: grid;
+             
+             grid-template-rows: repeat(3,100px);
+             grid-template-columns: repeat(4,1fr);
+             gap:20px;
+             color: blue;
+             border: 1px solid salmon;
+             margin: auto;
+             width: 80%;
+             margin-top: 40px;
+         }
+         #container>div{
+             border: 1px solid saddlebrown;
+             background-color: blue;
+
+         }
+         button{
+             text-align: center;
+             justify-content: center;
+             margin:100px;
+         }
+         #btn>button{
+        justify-content: center;
+        align-items: center;
+        color: blue;
+        padding: 30px;
+        margin-left: 600px;
+         }
+         button:hover{
+             background-color: brown;
+            color: white;
+            cursor: pointer;
+         }
+         input:focus{
+             background-color: blueviolet;
+         }
+         #container>div:last-child , #container>div:first-child{
+            background-color: blueviolet;
+            margin: 0px;
+            padding-right: 170px;
+
+         }
+
+
+
+     </style>
+</head>
+
+<body>
+     <div id="container">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+     </div>
+     <div id="btn">
+         <button>sign up</button>
+     </div>
+     <input type="text" placeholder="enter name">
+</body>
+</html>

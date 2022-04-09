@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+     form in the body  for value inputinfg
+--><!-- 
+    <form>
+       <input type="text" placeholder="enter your name" value=""   id="name">
+       <input type="number" placeholder="enter your roll " value="" id="roll">
+         <input type="submit" value="save">   
+
+
+  </form>
+
+<div id="container">
+
+</div>
+
+  <script>
+      document.querySelector("form").addEventListener("submit",addstudent)
+          var studentdata=[
+            { -->
+<!--                 name: "perry",
+                roll:123
+            },   // array
+            {
+                name: "khushi",
+                roll:123 
+            }
+         
+
+          ];
+ 
+     
+      function addstudent(){
+       event.preventDefault();
+          var studentobj={
+              name:document.querySelector("#name").value,     // for taking the value 
+              roll:document.querySelector("#roll").value,     // 
+          };
+          studentdata.push(studentobj);
+          console.log(studentdata);
+          displaystudent(studentdata)
+      }
+ -->
+<!--      function displaystudent(studentdata){
+         document.querySelector("#container").innerText="";
+         studentdata.forEach(function(student){
+          var box= document.createElement("div");    // i vreated the box
+            // create a element inside the box
+           // now  i am created element inside the box
+           var name=document.createElement('p');
+           name.innerText=student.name;
+           var roll=document.createElement('p');
+           roll.innerText=student.roll;
+           box.append(name,roll);
+           document.querySelector("#container").append(box)
+
+         })
+     }
+       -->
+<!--   </script> --> -->
+   <!--  <h1>i m local storage of this body</h1>
+    
+         localStorage.setItem("name","masai");
+         localStorage.setItem("name","prateek");
+         var myname=localStorage.getItem("name");
+         console.log(myname) -->
+         
+    
+         <script>
+           /*   localStorage.setItem("age",19);
+             var names=["akash","shahid"];
+             var names1=["rocky"];
+             localStorage.setItem("studentNames",JSON.stringify(names));
+             localStorage.setItem("studentNames",JSON.stringify(names1)); */
+             // to store obj     
+           //  console.log(localStorage.getItem("stuentNames"))
+             var StudentObj={
+                 phone:"iphone",
+                 newphone:"S21promax"
+             }
+             localStorage.setItem("name",JSON.stringify(StudentObj));
+             console.log(JSON.parse(localStorage.getItem("name")).phone)
+             localStorage.clear();
+         </script>
+</body>
+</html>

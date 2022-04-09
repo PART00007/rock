@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ptc</title>
+    <style>
+        
+        #top-section{
+            background-color: white;
+           
+        }
+        h2{
+            text-align: center;
+        }
+        #card-section{
+            display: flex;
+           
+           
+            margin: auto;
+            height: 350px;
+          
+
+
+        }
+        #card-section>div{
+            margin: 20px;
+        }
+        img{
+            width: 100%;
+            
+           
+        }
+        h3+h3{
+            margin-top: -15px;
+        }
+       img+h3{
+           color: gray;
+       }
+       #card-section2{
+           display: grid;
+           grid-template-rows: repeat(2,auto);
+           grid-template-columns: repeat(4,1fr);
+           gap: 15px ;
+          
+           width: 80%;
+           margin: auto;
+           margin-top: 70px;
+       }
+       #card-section2>div{
+          margin-top: 30px;
+           height: auto;
+           background-color: white;
+       }
+       #bottom-section{
+           background-color: rgb(238, 244, 247);
+           height: 650px;
+
+           
+    
+       }
+       #card-section2>div>img{
+           width: 100%;
+           height: 150px;
+       }
+       #card-section2>div>h2{
+           margin-top: -2px;
+       }
+       h2+p{
+           text-align: center;
+           width: 90%;
+           margin: auto;
+           line-height: 25px;
+           margin-top: -10px;
+       } 
+       /* medium  */
+       @media all and (min-width:451px) and (max-width:850px){
+    
+        #card-section{
+            display:flex;
+            
+            flex-wrap: wrap;
+            min-width: 451px;
+            max-width: 850px;
+           flex-direction: column;
+            
+            margin: auto;
+            height: 350px;
+          
+
+
+        }
+        #card-section>div{
+            flex:50%;
+            flex-direction: column;
+             flex-wrap: wrap;
+        }
+    
+        #card-section2{
+           display: grid;
+           grid-template-rows: repeat(2,auto);
+           grid-template-columns: repeat(3,1fr);
+           gap: 15px ;
+          
+           width: 100%;
+           margin: auto;
+           margin-top: 70px;
+       }
+      
+       }
+
+
+       /*  small  */
+       @media all and (min-width:51px) and (max-width:450px){
+        #card-section{
+            display: flex;
+    
+           flex-wrap: wrap;
+           flex-direction: column(1,50%);
+    
+            margin: auto;
+            height: 350px;
+           
+
+
+        }
+      
+        #card-section2{
+           display: grid;
+           grid-template-rows: repeat(2,auto);
+           grid-template-columns: repeat(2,1fr);
+           gap: 15px ;
+          
+           width: 100%;
+           margin: auto;
+           margin-top: 70px;
+       }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+      <div id="top-section">
+          <h2>Our Blog Posts</h2>
+          <div id="card-section">
+           <div>
+           <img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="">
+             <h3>29, january 2019</h3>
+             <h3>Architectual Art Modern</h3>
+           </div>
+           <div>
+           <img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="">
+           <h3>29, january 2019</h3>
+           <h3>Architectual Art Modern</h3>
+           </div>
+           <div>
+            <img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="">
+            <h3>29, january 2019</h3>
+            <h3>Architectual Art Modern</h3>
+           </div>
+          </div>
+
+      </div>
+      <div id="bottom-section">
+         <div id="card-section2">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYzzOn8W_1imnBsynicxASm2XMCFc2NRYQw&usqp=CAU" alt="">
+                 <h2>Creative Design</h2>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere. Lorem, ipsum.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYzzOn8W_1imnBsynicxASm2XMCFc2NRYQw&usqp=CAU" alt="">
+                <h2>Creative Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere. Lorem, ipsum.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYzzOn8W_1imnBsynicxASm2XMCFc2NRYQw&usqp=CAU" alt="">
+                <h2>Creative Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere. Lorem, ipsum.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYzzOn8W_1imnBsynicxASm2XMCFc2NRYQw&usqp=CAU" alt="">
+                <h2>Creative Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere. Lorem, ipsum.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYzzOn8W_1imnBsynicxASm2XMCFc2NRYQw&usqp=CAU" alt="">
+                <h2>Creative Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere. Lorem, ipsum.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYzzOn8W_1imnBsynicxASm2XMCFc2NRYQw&usqp=CAU" alt="">
+                <h2>Creative Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere. Lorem, ipsum.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYzzOn8W_1imnBsynicxASm2XMCFc2NRYQw&usqp=CAU" alt="">
+                <h2>Creative Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere. Lorem, ipsum.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYzzOn8W_1imnBsynicxASm2XMCFc2NRYQw&usqp=CAU" alt="">
+                <h2>Creative Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere. Lorem, ipsum.</p>
+            </div>
+         </div>
+      </div>
+    </div>
+</body>
+</html>

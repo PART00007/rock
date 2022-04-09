@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(250, 248, 248);
+        }
+        #main-container{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: auto;
+            margin: auto;
+            margin-top: 30px;
+            width: 85%;
+            gap: 20px;
+        }
+       #main-container>div{
+          
+           padding: 25px;
+           background-color: white;
+           border-radius: 10px;
+
+
+       }
+       #main-container>div>h2{
+           font:bold;
+       }
+       #main-container>div>div+p{
+           color: gray;
+           width: auto;
+       }
+      
+       #main-container>div>div{
+        
+         display: flex;
+         justify-content: space-between;
+       }
+       h2+h2{
+           color: rgb(223, 159, 41);
+       }
+       /*medium*/
+           @media all and (min-width:451px) and (max-width:850px){
+            #main-container{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            width: 100%;
+         
+        }
+        #main-container>div>div{
+        
+        display: flex;
+        justify-content: space-between;
+      }
+           }
+           /*small*/
+         @media all and (min-width:86px) and (max-width:450px){
+            #main-container{
+            display: grid;
+            grid-template-columns:repeat(1,1fr);
+            grid-template-rows: auto;
+           
+            width: 100%;
+ 
+        }
+        #main-container>div>div{
+        
+        display: flex;
+        justify-content: space-between;
+      }
+         }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+
+     <div>
+         <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+      
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p> 
+      
+           
+               
+    </div>
+     <div>
+        <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p>   
+     </div>
+     <div>
+        <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p>  
+     </div>
+     <div>
+        <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p>  
+     </div>
+     <div>
+        <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p>  
+     </div>
+     <div>
+        <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p>  
+     </div>
+     <div>
+        <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p>  
+     </div>
+     <div>
+        <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p>  
+     </div>
+     <div>
+        <div>
+            <h2>Cappuciono</h2>
+            <h2>$49</h2>
+         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,?</p>  
+     </div>
+    </div>
+</body>
+</html>

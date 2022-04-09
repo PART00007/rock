@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            justify-content: center;
+            
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+      <h1>FIND THE EXPONENT</h1>
+      <form >
+          <input type="number" placeholder="a" value="" id="A">
+          <input type="number" placeholder="b" value="" id="B">
+      </form>
+       <button onclick="expo()">CLICK HERE</button>
+</body>
+ <script type="text/javascript">
+    function expo(){
+        var num1=document.getElementById("A").value;
+        var num2=document.getElementById("B").value;
+        alert(num1*num2)
+    }
+ </script>
+</html>
